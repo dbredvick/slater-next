@@ -18,8 +18,7 @@ type Config = {
   ];
 };
 // @ts-ignore 
-export const slater = (config: Config) => (req: NextApiRequest, res: NextApiResponse):any  => {
-  const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+export const slater = (config: Config) => async (req: NextApiRequest, res: NextApiResponse):any  => {
     const successHandler = (props: any) => {
       console.log('success');
       return props;
@@ -64,6 +63,4 @@ export const slater = (config: Config) => (req: NextApiRequest, res: NextApiResp
       errorHandler(err);
       return res.status(500).send(err);
     }
-  }
-  return handler;
-};
+}
