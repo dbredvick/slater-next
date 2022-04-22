@@ -1,9 +1,11 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.5",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "homepage": "https://tryslater.com/",
+  "description": "A library to help you schedule tasks in Next.js",
+  "keywords": "nextjs, schedule, task, scheduler, cronjob, cron",
   "repository": {
     "type": "git",
     "url": "https://github.com/dbredvick/slater-next.git"
